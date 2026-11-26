@@ -6,9 +6,18 @@ body {
 }
 
 .header {
+    position: relative;
     background-image: url("img/header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
+}
+
+.header_icon {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 700px;
+    z-index: 1000;
 }
