@@ -104,13 +104,23 @@ body {
 .team-items {
     display: flex;
     justify-content: center;
+    margin-bottom: 70px;
+    margin-top: 70px;
 }
 
 .team-item {
     display: flex;
     flex-direction: column;
-    margin-right: 40px;
+    margin-right: 20px;
     align-items: center;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.team-item:hover {
+    transition: all .2s linear;
+    background-color: #607599;
 }
 
 .team-item:last-child{
@@ -119,6 +129,7 @@ body {
 
 .team-img{
     width: 200px;
+    border-radius: 50%;
     
 }
 
@@ -128,9 +139,9 @@ body {
 
 .team-item-title{
     font-size: 35px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #E9D9CA;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .team-item-text{
@@ -138,4 +149,83 @@ body {
     width: 250px;
     color: #F4721E;
     font-weight: 400;
+}
+
+.polz1 {
+    margin-top: 5px;
+    display: flex;                 
+    align-items: center;
+    gap: 20px;    
+    border: 3px solid #e67e22;      
+    padding: 10px 25px;             
+    margin-bottom: 20px;            
+    background: #4D6080;
+    cursor: pointer;                
+}
+
+.polz1_icon {
+    width: 230px;            
+    height: 300px;           
+    border: 2px solid #e67e22; 
+    border-radius: 5px;     
+    object-fit: cover;      
+    flex-shrink: 0;         
+}
+
+.polz1_name {
+    color: #E9D9CA;
+}
+
+.polz1_name span {
+    font-size: 25px;
+}
+
+.polz1_name a {
+    color: #F4721E;
+}
+
+/*Contacts*/
+
+.contacts {
+    padding: 80px 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts-title {
+    font-size: 100px;
+    color: #4D6080;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.contacts-title::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #F4721E;
+}
+
+.contacts-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contacts-img {
+    width: 500px;
+}
+
+.contacts-icon {
+    width: 50px;
+    color: #4D6080;
+    margin-right: 20px;
+}
+
+.contacts-text-item {
+    font-size: 25px;
 }
