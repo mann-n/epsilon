@@ -2,8 +2,11 @@ body {
     font-family: "Oswald", sans-serif;
     padding: none;
     margin: 0;
-    font-size: 50px;
+    font-size: 20px;
+    background-color: #E9D9CA;
 }
+
+/*Header*/
 
 .header {
     position: relative;
@@ -21,3 +24,30 @@ body {
     width: 700px;
     z-index: 1000;
 }
+
+/*About*/
+
+.about-title {
+    color: #F4721E;
+    font-size: 30px;
+    min-width: 550px;
+    margin-right: 25px;
+    position: relative;
+}
+
+.about-title::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    margin-left: 40px; 
+    width: 2.5px;
+    height: 130px;
+    background-color: #F4721E;
+}
+
+.about-text {
+    display: flex;
+    padding: 50px;
+    color: #4D6080;
+}
+
